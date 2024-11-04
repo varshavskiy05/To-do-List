@@ -1,0 +1,7 @@
+.venv/
+
+/toDoList/todo/migrations
+
+/static/
+
+/toDoList/toDoList/settings.py
