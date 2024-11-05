@@ -1,0 +1,22 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.auth-content {
+  display: flex;
+  background-color: lightgray;
+  width: max-content;
+  padding: 100px 200px 100px 200px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 15%;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
