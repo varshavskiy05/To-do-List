@@ -33,6 +33,14 @@ input{
   margin-bottom: 15px;
 }
 
+.input-container input {
+    color: black;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
 .button-container {
   display: flex;
   justify-content: left;

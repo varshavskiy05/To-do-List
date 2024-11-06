@@ -3,11 +3,40 @@
 {% block content %}
 <div class="auth-content">
             <h1>Register</h1>
+            <form method="post">
+            {% csrf_token %}
             <div class="input-container">
-
+                {{ form.username }}
+                {{ form.email }}
+                {{ form.password1 }}
+                {{ form.password2 }}
             </div>
             <div class="button-container">
-                <button class="btn btn-primary" id="register">Register</button>
+                <button class="btn btn-primary" type="submit">Register</button>
             </div>
+        </form>
+        {% if form.errors %}
+            <div class="error-message">
+                {% for field in form %}
+                    {% for error in field.errors %}
+                        <p>{{ error }}</p>
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        {% endif %}
         </div>
+ <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const password1 = document.getElementById('id_password1');
+            const password2 = document.getElementById('id_password2');
+
+            if (password1) {
+                password1.setAttribute('placeholder', 'Password');
+            }
+
+            if (password2) {
+                password2.setAttribute('placeholder', 'Confirm Password');
+            }
+        });
+    </script>
 {% endblock %}
