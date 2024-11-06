@@ -1,0 +1,49 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+h1{
+  color: blue;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+input{
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.auth-content {
+  display: flex;
+  background-color: lightgray;
+  width: max-content;
+  padding: 100px 200px 100px 200px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 15%;
+  flex-direction: column;
+  border: blue 1px solid;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: left;
+  gap: 15px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+
