@@ -1,0 +1,83 @@
+aside {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    border-right: 1px solid #ddd;
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+h1{
+    font-weight: bold;
+    color: blue;
+    font-size: 20px;
+    transition: all 0.2s ease;
+
+}
+
+.addons-container{
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    z-index: 10;
+    left: 0;
+}
+
+
+h2{
+    transition: all 0.2s ease;
+    width: max-content;
+    font-weight: bold;
+    color: blue;
+}
+
+h2:hover, a:hover, h1:hover{
+    transform: scale(1.1);
+    color: cornflowerblue;
+    border: blue;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    color: blue;
+}
+
+ ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+     transition: all;
+
+ }
+
+li {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+li:hover {
+    background-color: #ddd;
+}
+
+#tag-dropdown {
+    display: none;
+    padding-left: 20px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    transition: max-height 10s ease-in-out;
+    max-height: 0;
+}
+
+#tag-dropdown.show {
+    display: block;
+    max-height: 200px;
+}
